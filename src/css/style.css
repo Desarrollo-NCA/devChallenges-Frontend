@@ -1,0 +1,113 @@
+p {
+	font-family: "Ubuntu Mono", monospace;
+}
+
+.montse {
+	font-family: "Montserrat", sans-serif;
+}
+
+.poppins {
+	font-family: "Poppins", sans-serif;
+}
+
+.notoSans{
+	font-family: "Noto Sans JP", sans-serif;
+}
+
+.container-80 {
+	width: 80%;
+	position: relative;
+	float: right;
+	padding: 10px;
+	padding: 20px;
+}
+
+button {
+	font-family: "Noto Sans JP", sans-serif;
+}
+
+button.btn-default {
+	background: #e0e0e0;
+	box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+	border-radius: 6px;
+}
+
+button.btn-default:hover {
+	background: #aeaeae;
+	box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+	border-radius: 6px;
+}
+
+button.btn-out-blue {
+	border: 1px solid #3d5afe;
+	border-radius: 6px;
+	color: #3d5afe;
+}
+
+button.btn-out-blue:hover {
+	background: rgba(41, 98, 255, 0.1);
+	border-radius: 6px;
+	color: #3d5afe;
+}
+
+button.btn-text {
+	background: none;
+	color: #3d5afe;
+}
+
+button.btn-text:hover {
+	background: rgba(41, 98, 255, 0.1);
+}
+
+.create {
+	color: #9e9e9e;
+	font-weight: 500;
+}
+
+.create span {
+	font-weight: 700;
+}
+
+.divTextArea{
+	position: relative;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: space-between;
+}
+
+textarea.textArea{
+	position: relative;
+	justify-content: center;
+
+	max-width: 80%;
+}
+
+.column{
+	min-height: 265px;
+}
+
+.container-home{
+	margin-top: 20px;
+	margin-left: 90px;
+	display: flex;
+}
+
+.container-home ul{
+	list-style: none;
+}
+
+.container-home ul li{
+	display: inline;
+	margin: auto 20px;
+}
+
+.container-home ul li a{
+	font-size: 50px;
+	color: #9e9e9e;
+	transition: all ease .2s;
+}
+
+.container-home ul li a:hover{
+	color: #090f31;
+}
