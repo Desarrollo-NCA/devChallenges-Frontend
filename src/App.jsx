@@ -4,7 +4,7 @@ import NavBar from "./components/NavBar.jsx";
 import ButtonsPage from "./components/Buttons/ButtonComponent.jsx";
 import Home from "./components/Home.jsx";
 import InputsPage from "./components/Inputs/InputsComponent.jsx";
-import './css/main.css'
+import './css/style.css'
 
 function App() {
 	return (

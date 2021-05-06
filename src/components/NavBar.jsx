@@ -27,8 +27,10 @@ const NavBar = () => {
 							</Link>
 						</li>
 					</ul>
+					<div className="content"><br/></div>
 				</nav>
 			</div>
+
 		</div>
 	);
 };

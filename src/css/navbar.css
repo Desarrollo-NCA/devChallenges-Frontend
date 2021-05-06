@@ -73,3 +73,10 @@ h3.titlenav span {
 	font-weight: bolder;
 	color: #090f31;
 }
+
+.content{
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	height: 2px;
+	margin-top: 10px; 
+}

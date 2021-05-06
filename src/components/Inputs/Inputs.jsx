@@ -36,7 +36,7 @@ const Inputs = (props) => {
 			)}
 			{props.clName.includes("endIcono") && (
 				<div className={props.classDiv}>
-					<span className="input-group-text">{props.icon}</span>
+					
 					<input
 						className={props.clName}
 						type="text"
@@ -45,6 +45,7 @@ const Inputs = (props) => {
 						placeholder={props.placeholder}
 						defaultValue={props.value}
 					/>
+					<span className="input-group-text">{props.icon}</span>
 				</div>
 			)}
 			{!props.clName.includes("startIcono") &&
@@ -64,6 +65,11 @@ const Inputs = (props) => {
 			)}
 			{props.clName.includes("helpText") ? (
 				<div className="text-secondary">This is a simple help message</div>
+			) : (
+				<span></span>
+			)}
+			{props.clName.includes("is-valid") ? (
+				<div className="text-success">This is a success message</div>
 			) : (
 				<span></span>
 			)}
@@ -90,23 +96,4 @@ const Inputs = (props) => {
 	);
 };
 
-const TextArea = (props) => {
-	return (
-		<div className="container">
-			<p>&lt;{props.inputTitle}/&gt;</p>
-			<label className="form-label notoSans" htmlFor={props.id1}>
-				TextArea
-			</label>
-			<div className={props.classDiv}>
-				<textarea
-					className={props.clName}
-					id={props.id1}
-					cols={props.col}
-					rows={props.row}
-				/>
-			</div>
-		</div>
-	);
-};
-
-export { Inputs, TextArea };
+export { Inputs };

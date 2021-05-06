@@ -1,6 +1,6 @@
 import React from "react";
 
-const Componente = (props) => {
+const Button = (props) => {
 	return (
 		<div>
 			<p>&lt;{props.text}/&gt;</p>
@@ -11,4 +11,4 @@ const Componente = (props) => {
 	);
 };
 
-export default Componente;
+export default Button;

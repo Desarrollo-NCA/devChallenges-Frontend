@@ -1,5 +1,6 @@
 import React from "react";
-import { Inputs, TextArea } from "./Inputs.jsx";
+import { Inputs } from "./Inputs.jsx";
+import { TextArea } from "./TextArea.jsx"
 import { Row, Col } from "reactstrap";
 import { Phone } from "../../components/FontAwesome.jsx";
 import "../../css/style.css";
@@ -36,11 +37,11 @@ const InputsComponent = () => {
 				<Col className="column">
 					<Inputs
 						classDiv="input-group"
-						inputTitle="Input type='tel'"
+						inputTitle="Input starticon"
 						clName="form-control startIcono"
 						id1="input3"
 						id2="check3"
-						placeholder="Pane"
+						placeholder="Phone"
 						type="tel"
 						icon={Phone}
 					/>
@@ -48,8 +49,8 @@ const InputsComponent = () => {
 				<Col className="column">
 					<Inputs
 						classDiv="input-group"
-						inputTitle="Input type='tel' error"
-						clName="form-control is-invalid endIcono"
+						inputTitle="Input endicon"
+						clName="form-control endIcono"
 						id1="input4"
 						id2="check4"
 						placeholder="Phone"
@@ -92,9 +93,8 @@ const InputsComponent = () => {
 						clName="form-control"
 						id1="input7"
 						id2="check7"
-						placeholder=""
+						placeholder="Input size Small"
 						type="text"
-						value="TEXT"
 					/>
 				</Col>
 				<Col className="column">
@@ -104,9 +104,8 @@ const InputsComponent = () => {
 						clName="form-control"
 						id1="input8"
 						id2="check8"
-						placeholder=""
+						placeholder="Input size default"
 						type="text"
-						value="TEXT"
 					/>
 				</Col>
 				<Col className="column">
@@ -116,9 +115,8 @@ const InputsComponent = () => {
 						clName="form-control"
 						id1="input9"
 						id2="check9"
-						placeholder=""
+						placeholder="Input size Large"
 						type="text"
-						value="TEXT"
 					/>
 				</Col>
 			</Row>
@@ -143,7 +141,6 @@ const InputsComponent = () => {
 						inputTitle="TextArea"
 						col="1"
 						row="5"
-						
 					></TextArea>
 				</Col>
 				<Col className="column text-center">
@@ -153,7 +150,6 @@ const InputsComponent = () => {
 						inputTitle="TextArea"
 						col="1"
 						row="5"
-						
 					></TextArea>
 				</Col>
 				<Col className="text-center">
@@ -163,7 +159,6 @@ const InputsComponent = () => {
 						inputTitle="TextArea"
 						col="1"
 						row="5"
-						
 					></TextArea>
 				</Col>
 			</Row>

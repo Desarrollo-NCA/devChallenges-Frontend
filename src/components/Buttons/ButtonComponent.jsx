@@ -1,5 +1,5 @@
 import React from "react";
-import Componente from "./Componente.jsx";
+import Button from "./Button.jsx";
 import { Row, Col } from "reactstrap";
 import { Cart } from "../../components/FontAwesome.jsx";
 import "../../css/style.css";
@@ -10,12 +10,12 @@ const ButtonsPage = () => {
 			<h2 className="mt-4 ml-3 poppins">Buttons</h2>
 			<Row className="mt-5">
 				<Col>
-					<Componente clName="btn btn-default" text="Button" value="Default" />
+					<Button clName="btn btn-default" text="Button" value="Default" />
 				</Col>
 			</Row>
 			<Row className="mt-5">
 				<Col>
-					<Componente
+					<Button
 						clName="btn btn-out-blue"
 						text="Button btn-outline"
 						value="Default"
@@ -24,7 +24,7 @@ const ButtonsPage = () => {
 			</Row>
 			<Row className="mt-5">
 				<Col>
-					<Componente
+					<Button
 						clName="btn btn-text"
 						text="Button btn-text"
 						value="Default"
@@ -33,7 +33,7 @@ const ButtonsPage = () => {
 			</Row>
 			<Row className="mt-5">
 				<Col>
-					<Componente
+					<Button
 						clName="btn btn-primary"
 						text="Button btn-primary of Bootstrap"
 						value="Default"
@@ -42,7 +42,7 @@ const ButtonsPage = () => {
 			</Row>
 			<Row className="mt-5">
 				<Col>
-					<Componente
+					<Button
 						clName="btn btn-secondary"
 						text="Button btn-secondary of Bootstrap disabled"
 						state={true}
@@ -50,7 +50,7 @@ const ButtonsPage = () => {
 					/>
 				</Col>
 				<Col>
-					<Componente
+					<Button
 						clName="btn btn-text"
 						text="Button btn-text disabled"
 						state={true}
@@ -60,7 +60,7 @@ const ButtonsPage = () => {
 			</Row>
 			<Row className="mt-5">
 				<Col>
-					<Componente
+					<Button
 						clName="btn btn-primary"
 						text="Button btn-icon-start"
 						iconStart={Cart}
@@ -68,7 +68,7 @@ const ButtonsPage = () => {
 					/>
 				</Col>
 				<Col>
-					<Componente
+					<Button
 						clName="btn btn-primary"
 						text="Button btn-incon-end"
 						iconEnd={Cart}
@@ -78,21 +78,21 @@ const ButtonsPage = () => {
 			</Row>
 			<Row className="mt-5">
 				<Col>
-					<Componente
+					<Button
 						clName="btn btn-primary btn-sm"
 						text="Button btn-sm"
 						value="Default"
 					/>
 				</Col>
 				<Col>
-					<Componente
+					<Button
 						clName="btn btn-primary"
 						text="Button btn-normal"
 						value="Default"
 					/>
 				</Col>
 				<Col>
-					<Componente
+					<Button
 						clName="btn btn-primary btn-lg"
 						text="Button btn-lg"
 						value="Default"
@@ -101,28 +101,28 @@ const ButtonsPage = () => {
 			</Row>
 			<Row className="mt-5 mb-2">
 				<Col>
-					<Componente
+					<Button
 						clName="btn btn-default"
 						text="Button btn-default"
 						value="Default"
 					/>
 				</Col>
 				<Col>
-					<Componente
+					<Button
 						clName="btn btn-primary"
 						text="Button btn-primary"
 						value="Default"
 					/>
 				</Col>
 				<Col>
-					<Componente
+					<Button
 						clName="btn btn-secondary"
 						text="Button btn-secondary"
 						value="Secondary"
 					/>
 				</Col>
 				<Col>
-					<Componente
+					<Button
 						clName="btn btn-danger"
 						text="Button btn-danger"
 						value="Danger"
