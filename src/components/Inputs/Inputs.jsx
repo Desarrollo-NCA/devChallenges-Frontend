@@ -5,7 +5,7 @@ const Inputs = (props) => {
 	const [checked, setChecked] = useState(null);
 	const [msgstatus, setMsgstatus] = useState("");
 
-	const inputdisabled = (clase) => {
+	const inputdisabled = () => {
 		if (checked === true) {
 			setChecked(false);
 			setMsgstatus("");

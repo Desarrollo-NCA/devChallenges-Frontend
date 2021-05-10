@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar.jsx";
 import ButtonsPage from "./components/Buttons/ButtonComponent.jsx";
 import Home from "./components/Home.jsx";
 import InputsPage from "./components/Inputs/InputsComponent.jsx";
+import TodoApp from "./components/TodoApp.jsx";
 import './css/style.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
 					<Route exact path="/" component={Home}></Route>
 					<Route path="/buttons" component={ButtonsPage}></Route>
 					<Route path="/inputs" component={InputsPage}></Route>
+					<Route path="/todo" component={TodoApp}></Route>
 				</Switch>
 			</Router>
 		</div>

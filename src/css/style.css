@@ -116,3 +116,51 @@ textarea.textArea{
 .container-home ul li a:hover{
 	color: #090f31;
 }
+
+div.navbar-container{
+	width: 68%;
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+}
+
+div.container-input{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+div.todo-input{
+
+}
+
+div.div-list{
+		margin: 25px auto;
+	width: 600px;
+}
+
+span.tareaText{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+span.tareaText.checked{
+	text-decoration: line-through;
+}
+
+form.formulario-tareas{
+	width: 55%
+}
+
+div.botonBorrarTodas{
+	position: relative;
+	display: flex;
+	justify-content: right;
+}
+
+button.borrarTodas{
+	width: 135px;
+
+}
+
