@@ -10,7 +10,7 @@ p {
 	font-family: "Poppins", sans-serif;
 }
 
-.notoSans{
+.notoSans {
 	font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -18,7 +18,6 @@ p {
 	display: flex;
 	width: 100%;
 }
-
 
 .container-80 {
 	width: 80%;
@@ -74,7 +73,7 @@ button.btn-text:hover {
 	font-weight: 700;
 }
 
-.divTextArea{
+.divTextArea {
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -82,85 +81,169 @@ button.btn-text:hover {
 	justify-content: space-between;
 }
 
-textarea.textArea{
+textarea.textArea {
 	position: relative;
 	justify-content: center;
 	max-width: 80%;
 }
 
-.column{
+.column {
 	min-height: 265px;
 }
 
-.container-home{
+.container-home {
 	margin-top: 20px;
 	margin-left: 90px;
 	display: flex;
 }
 
-.container-home ul{
+.container-home ul {
 	list-style: none;
 }
 
-.container-home ul li{
+.container-home ul li {
 	display: inline;
 	margin: auto 20px;
 }
 
-.container-home ul li a{
+.container-home ul li a {
 	font-size: 50px;
 	color: #9e9e9e;
-	transition: all ease .2s;
+	transition: all ease 0.2s;
 }
 
-.container-home ul li a:hover{
+.container-home ul li a:hover {
 	color: #090f31;
 }
 
-div.navbar-container{
+div.navbar-container {
 	width: 68%;
-padding-right: 15px;
-padding-left: 15px;
-margin-right: auto;
-margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
-div.container-input{
+div.container-input {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-div.todo-input{
-
+div.todo-input {
 }
 
-div.div-list{
-		margin: 25px auto;
+div.div-list {
+	margin: 25px auto;
 	width: 600px;
 }
 
-span.tareaText{
+span.tareaText {
 	font-size: 16px;
 	font-weight: bold;
 }
 
-span.tareaText.checked{
+span.tareaText.checked {
 	text-decoration: line-through;
 }
 
-form.formulario-tareas{
-	width: 55%
+form.formulario-tareas {
+	width: 55%;
 }
 
-div.botonBorrarTodas{
+div.botonBorrarTodas {
 	position: relative;
 	display: flex;
 	justify-content: right;
 }
 
-button.borrarTodas{
+button.borrarTodas {
 	width: 135px;
-
 }
 
+button.btn-random {
+	float: right;
+}
+
+div.container-quote {
+	display: flex;
+	justify-content: center;
+}
+
+div.container-textQuote {
+	position: absolute;
+	width: 614px;
+	height: 301px;
+	top: 100px;
+}
+
+div.border-text {
+	border-left: 8px solid #f7df94;
+	padding-left: 99px;
+}
+
+.quoteText {
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 120%;
+	color: #000000;
+}
+
+button.author {
+	display: flex;
+	width: 600px;
+	text-align: left;
+	justify-content: space-between;
+	align-items: center;
+}
+
+button.author:hover {
+	color: #f2f2f2;
+}
+
+p.quoteAuthor {
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+p.quoteGenre {
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+h2.authorTitle {
+	margin: 50px auto;
+	
+	text-align: center;
+	width: 700px;
+	height: 42px;
+
+
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 42px;
+
+	color: #333333;
+}
+
+.arrowAuthor {
+	color: white;
+}
+
+li.list-group-item {
+	border: none;
+}
+
+.oneAuthor-list {
+	margin: 30px auto;
+}

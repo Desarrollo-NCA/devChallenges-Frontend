@@ -5,6 +5,7 @@ import ButtonsPage from "./components/Buttons/ButtonComponent.jsx";
 import Home from "./components/Home.jsx";
 import InputsPage from "./components/Inputs/InputsComponent.jsx";
 import TodoApp from "./components/TodoApp.jsx";
+import RandomQuote from "./components/RandomQuote.jsx";
 import './css/style.css'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
 					<Route path="/buttons" component={ButtonsPage}></Route>
 					<Route path="/inputs" component={InputsPage}></Route>
 					<Route path="/todo" component={TodoApp}></Route>
+					<Route path="/random-quote" component={RandomQuote}></Route>
 				</Switch>
 			</Router>
 		</div>

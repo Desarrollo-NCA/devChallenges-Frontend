@@ -38,6 +38,11 @@ const NavBar = () => {
 								TODO
 							</Link>
 						</li>
+						<li className="nav-item">
+							<Link className="nav-link" to="/random-quote">
+								Random Quote
+							</Link>
+						</li>
 					</ul>
 					
 				</nav>
