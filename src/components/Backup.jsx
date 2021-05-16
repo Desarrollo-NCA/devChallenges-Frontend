@@ -1,29 +1,18 @@
-const markReady = (id) => {
-		const marcado = todo.map((item) =>
-			item.id === id
-				? {
-						id: item.id,
-						tarea: item.tarea,
-						completed: true,
-				  }
-				: item
-		);
-	
-		setTodo(marcado);
-		document.querySelector(`span[id=${id}]`).classList.add("checked");
-		console.log("Checked", id);
-	};
+if (random.length === 0) {
+			for (var i = 0; i < 4; i++) {
+				var n = Math.random() * (245 - 1) + 1;
 
-	const unMarkReady = (id) => {
-		const desmarcado = todo.map((item) =>
-			item.id === id
-				? {
-						id: item.id,
-						tarea: item.tarea,
-						completed: false,
-				  }
-				: item
-		);
-		setTodo(desmarcado);
-		document.querySelector(`span[id=${id}]`).classList.remove("checked");
+				const prueba = country.slice(n, n + 1);
+
+				prueba.map((item) => random.push(item));
+				console.log(n, "ACA")
+			}
+		}
+
+
+
+
+const capital = () => {
+		var n = Math.floor(Math.random() * (4 - 0) + 0);
+		random.map((item, index) => (index === n ? setCap(item.capital) : null));
 	};

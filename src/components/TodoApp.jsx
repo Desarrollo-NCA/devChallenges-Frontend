@@ -97,8 +97,8 @@ const TodoApp = () => {
 			<h2 className="mt-4 ml-3 poppins">#todo</h2>
 			<div className="navbar-container">
 				<nav className="navbar navbar-expand-lg navbar-dark bg-ligth">
-					<ul className="navbar-nav justify-content-center">
-						<li className="nav-item px-5">
+					<ul className="navbar-nav todo justify-content-center">
+						<li className="nav-item">
 							<button
 								onClick={() => {
 									setActive(false);
@@ -116,7 +116,7 @@ const TodoApp = () => {
 								All
 							</button>
 						</li>
-						<li className="nav-item px-5">
+						<li className="nav-item">
 							<button
 								onClick={() => {
 									setActive(true);
@@ -137,7 +137,7 @@ const TodoApp = () => {
 								Active
 							</button>
 						</li>
-						<li className="nav-item px-5">
+						<li className="nav-item">
 							<button
 								onClick={() => {
 									setActive(false);

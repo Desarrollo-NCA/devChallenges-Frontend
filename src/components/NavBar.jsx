@@ -43,6 +43,11 @@ const NavBar = () => {
 								Random Quote
 							</Link>
 						</li>
+						<li className="nav-item">
+							<Link className="nav-link" to="/country-quiz">
+								Country Quiz
+							</Link>
+						</li>
 					</ul>
 					
 				</nav>

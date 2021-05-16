@@ -75,7 +75,7 @@ const RandomQuote = () => {
 						<ul className="list-group">
 							{authorsList.length > 0 ? (
 								authorsList.map((item) => (
-									<li className="oneAuthor-list list-group-item" key={item._id}>
+									<li className="oneAuthor-list list-group-item quote" key={item._id}>
 										<div className="border-text">
 											<span className="quoteText">
 												<q>{item.quoteText}</q>
