@@ -3,7 +3,7 @@ import myData from "./countrys.json";
 import uniqid from "uniqid";
 import ImgQuestCard from "./ImgQuestCard.jsx";
 import ImgWinners from "./ImgWinners.jsx";
-import { AiOutlineCheckCircle, AiOutlineCloseCircle, AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineCheckCircle, AiOutlineCloseCircle } from "react-icons/ai";
 
 const CountryQuiz = () => {
 	const country = myData;
@@ -97,21 +97,8 @@ const CountryQuiz = () => {
 	};
 	return (
 		<div className="container-80 quiz-bg">
-		<div className="container-menu">
-		<button 
-		id="btn-menu"
-		onClick={() => {
-			document.querySelector('.hamb').classList.toggle('show')
-			document.querySelector('.close-circle').classList.toggle('show')
-			document.querySelector('.container-nav').classList.toggle('show')
-			}}
-		className="btn-menu">
-			<AiOutlineMenu className="hamb"/>
-			<AiOutlineCloseCircle className="close-circle"/>
-		</button>
-		</div>
 			{playTime === true ? (
-				<div className="my-auto mx-auto quizCard">
+				<div className="mx-auto quizCard">
 					<div className="encabezado">
 						<h2 className="quiz-title">COUNTRY QUIZ</h2>
 						<ImgQuestCard className="imgQuestCard" />
@@ -148,7 +135,9 @@ const CountryQuiz = () => {
 							</button>
 						))}
 					</ul>
-					<span className="count-score"><span className="score">{score}</span> HIT !!!</span>
+					<span className="count-score">
+						<span className="score">{score}</span> HIT !!!
+					</span>
 					<button
 						onClick={win === true ? nextCard : lose}
 						id="btn-next"
@@ -176,7 +165,12 @@ const CountryQuiz = () => {
 					</div>
 				</div>
 			)}
+			<div className="create text-center montse mb-3 abso">
+				created by <span>Contreras Nicolás</span> - devChallenges.io
+			</div>
 		</div>
+		
+		
 	);
 };
 export default CountryQuiz;

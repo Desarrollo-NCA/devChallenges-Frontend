@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../css/style.css";
 import uniqid from "uniqid";
 import { BsTrash, BsPencilSquare } from "react-icons/bs";
+//import ResponsiveMenu from './ResponsiveMenu/ResponsiveMenu.jsx'
 
 const TodoApp = () => {
 	const [todo, setTodo] = useState([]);
@@ -94,10 +95,12 @@ const TodoApp = () => {
 
 	return (
 		<div className="container-80">
+		
+			<div className="container-todo">
 			<h2 className="mt-4 ml-3 poppins">#todo</h2>
 			<div className="navbar-container">
 				<nav className="navbar navbar-expand-lg navbar-dark bg-ligth">
-					<ul className="navbar-nav todo justify-content-center">
+					<ul className="navbar-nav todo">
 						<li className="nav-item">
 							<button
 								onClick={() => {
@@ -316,6 +319,7 @@ const TodoApp = () => {
 			</div>
 			<div className="create mt-5 text-center montse mb-3">
 				created by <span>Contreras Nicolás</span> - devChallenges.io
+			</div>
 			</div>
 		</div>
 	);

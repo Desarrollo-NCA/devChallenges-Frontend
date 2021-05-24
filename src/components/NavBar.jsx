@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-
 import '../css/navbar.css'
 
 
 const NavBar = () => {
+	const menuNav = () => {
+		document.querySelector(".hamb").classList.toggle("show");
+		document.querySelector(".close-circle").classList.toggle("show");
+		document.querySelector(".container-nav").classList.toggle("show");
+	}
 	return (
 		<div className="container-nav">
 			<h3 className="titlenav"><span>Dev</span>challenges.io</h3>
@@ -13,17 +16,23 @@ const NavBar = () => {
 				<nav className="nav-bar">
 					<ul className="navbar-nav">
 						<li className="nav-item">
-							<Link className="nav-link" to="/">
+							<Link
+							onClick={() => menuNav()}
+							 className="nav-link" to="/">
 								Home
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" to="/buttons">
+							<Link
+							onClick={() => menuNav()}
+							 className="nav-link" to="/buttons">
 								Buttons
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" to="/inputs">
+							<Link
+							onClick={() => menuNav()}
+							 className="nav-link" to="/inputs">
 								Inputs
 							</Link>
 						</li>
@@ -34,17 +43,23 @@ const NavBar = () => {
 							</a>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" to="/todo">
+							<Link
+							onClick={() => menuNav()}
+							 className="nav-link" to="/todo">
 								TODO
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" to="/random-quote">
+							<Link
+							onClick={() => menuNav()}
+							 className="nav-link" to="/random-quote">
 								Random Quote
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" to="/country-quiz">
+							<Link
+							onClick={() => menuNav()}
+							 className="nav-link" to="/country-quiz">
 								Country Quiz
 							</Link>
 						</li>

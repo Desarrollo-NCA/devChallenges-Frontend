@@ -7,12 +7,14 @@ import InputsPage from "./components/Inputs/InputsComponent.jsx";
 import TodoApp from "./components/TodoApp.jsx";
 import RandomQuote from "./components/RandomQuote.jsx";
 import CountryQuiz from "./components/CountryQuiz/CountryQuiz.jsx";
+import ResponsiveMenu from './components/ResponsiveMenu/ResponsiveMenu.jsx'
 import './css/style.css'
 
 function App() {
 	return (
 		<div className="container-app">
 			<Router>
+			<ResponsiveMenu/>
 				<NavBar />
 				<Switch>
 					<Route exact path="/" component={Home}></Route>

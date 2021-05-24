@@ -67,6 +67,7 @@ button.btn-text:hover {
 .create {
 	color: #9e9e9e;
 	font-weight: 500;
+	margin-top: 23px;
 }
 
 .create span {
@@ -118,14 +119,21 @@ textarea.textArea {
 
 div.navbar-container {
 	width: 100%;
+	display: flex;
+	justify-content: center;
 	padding-right: 15px;
 	padding-left: 15px;
 	margin-right: auto;
 	margin-left: auto;
 }
 
-.navbar-nav.todo{
+.navbar{
+	width: 80%;
+}
+
+.navbar-nav.todo {
 	flex-direction: row;
+	justify-content: space-between;
 }
 
 div.container-input {
@@ -255,14 +263,16 @@ li.list-group-item.quote {
 	background-image: url("../components/CountryQuiz/img/background.png");
 	background-size: cover;
 	width: 100%;
-	height: 120vh;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .quizCard {
-	position: absolute;
+	position: relative;
 	width: 464px;
-	top: 75px;
-	left: 23%;
+	margin-top: 56px;
 	background: #ffffff;
 	border-radius: 24px;
 }
@@ -278,11 +288,11 @@ p.question {
 	width: 85%;
 }
 
-img.flag-img{
+img.flag-img {
 	width: 84px;
 	height: 54px;
 	margin-left: 32px;
-	border: .5px solid rgba(96, 102, 208, 0.8);
+	border: 0.5px solid rgba(96, 102, 208, 0.8);
 }
 
 .imgQuestCard {
@@ -310,7 +320,7 @@ div.encabezado {
 	color: rgba(96, 102, 208, 0.8);
 }
 
-button.disabled{
+button.disabled {
 	pointer-events: none;
 	cursor: default;
 }
@@ -358,27 +368,27 @@ button.disabled{
 	margin: 11px 20px;
 }
 
-div.icons{
+div.icons {
 	position: relative;
 	font-size: 24px;
 	color: white;
 }
 
-.icon-cross{
+.icon-cross {
 	position: absolute;
 	top: 12px;
 	right: 12px;
 	opacity: 0;
 }
 
-.icon-check{
+.icon-check {
 	position: absolute;
 	top: 12px;
 	right: 12px;
 	opacity: 0;
 }
 
-.icon-check.true{
+.icon-check.true {
 	opacity: 1;
 }
 
@@ -398,7 +408,7 @@ h2.quiz-title {
 	color: #f2f2f2;
 }
 
-.count-score{
+.count-score {
 	margin-left: 35px;
 	font-family: Poppins;
 	font-style: normal;
@@ -409,22 +419,22 @@ h2.quiz-title {
 }
 
 button.nextQuiz {
-	background: #F9A826;
-box-shadow: 0px 2px 4px rgba(252, 168, 47, 0.4);
-border-radius: 12px;
-float: right;
-margin-right: 35px;
-margin-bottom: 20px;
-font-family: Poppins;
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 27px;
-color: #FFFFFF;
-opacity: 0;
+	background: #f9a826;
+	box-shadow: 0px 2px 4px rgba(252, 168, 47, 0.4);
+	border-radius: 12px;
+	float: right;
+	margin-right: 35px;
+	margin-bottom: 20px;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 27px;
+	color: #ffffff;
+	opacity: 0;
 }
 
-button.nextQuiz.active{
+button.nextQuiz.active {
 	opacity: 1;
 }
 
@@ -468,7 +478,7 @@ button.nextQuiz.active{
 	color: #1d355d;
 }
 
-.group-btn-try{
+.group-btn-try {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 20px;
@@ -488,77 +498,134 @@ button.nextQuiz.active{
 	border-radius: 12px;
 }
 
-
-button.btn-menu{
+button.btn-menu {
 	display: none;
 }
 
 /*-------------------------------MEDIAQUERY-------------------------------------*/
 
-
-@media(max-width: 767px){
-	.container-80.quiz-bg{
+@media (max-width: 767px) {
+	.container-80 {
 		width: 100%;
-		padding: 0;	
+		padding-top: 35px;
+	}
+
+	div.wellcome {
+		position: relative;
+	}
+
+	div.container-todo {
+		position: relative;
+		top: 30px;
+		margin: 30px;
+	}
+
+	div.navbar-container {
+		padding: 0;
+		margin: 0;
+	}
+
+	form.formulario-tareas {
+		width: auto;
+		min-width: auto;
+	}
+
+	div.container-home {
+		margin: 0;
+	}
+
+	.container-80.quiz-bg {
+		width: 100%;
+		padding-top: 40px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 
-	.container-menu{
-		width: 100%
+	.container-menu {
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 99;
 	}
 
-	button.btn-menu{
+	button.btn-menu {
 		display: block;
 		background: transparent;
 		border: none;
 		position: relative;
 		margin-left: 15px;
-		
 	}
 
-	.hamb{
+	.hamb {
 		position: absolute;
 		top: 10px;
 		display: block;
 		background: transparent;
-		color: #60bf88;
-		font-size: 50px;
+		color: black;
+		font-size: 40px;
 	}
 
-	.hamb.show{
+	.hamb.show {
 		visibility: hidden;
 	}
 
-	.close-circle{
+	.close-circle {
 		position: absolute;
 		top: 10px;
 		display: block;
 		background: transparent;
-		color: rgba(0, 0, 0, 0.5);
+		color: rgba(0, 0, 0, 0.8);
 		font-size: 30px;
 		visibility: hidden;
 		z-index: 20;
 	}
 
-	.close-circle.show{
+	.close-circle.show {
 		visibility: visible;
 	}
 
-	.quizCard{
-		left: auto;
+	.quizCard {
+		position: relative;
 		top: 12%;
 		width: 90%;
 	}
 
-	ul.list-group{
+	ul.list-group {
 		width: 100%;
 		justify-content: center;
 		align-items: center;
 	}
 
-	button.btn-choise{
+	button.btn-choise {
 		width: 80%;
+	}
+
+	div.wellcome{
+
+	}
+
+	div.container-quote{
+		width: 90%;
+	}
+
+	div.container-textQuote{
+		width: 100%;
+		position: relative;
+		top: auto;
+		margin-top: 15px;
+	}
+
+	div.border-text{
+		padding: 0 10px;
+	}
+
+	span.quoteText{
+		font-size: 26px;
+	}	
+
+	button.author{
+		width: 100%;
 	}
 }

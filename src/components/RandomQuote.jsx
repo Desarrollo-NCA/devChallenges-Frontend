@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../css/style.css";
 import { FaRandom, FaLongArrowAltRight } from "react-icons/fa";
 
@@ -7,6 +7,10 @@ const RandomQuote = () => {
 	const [authorsList, setAuthorList] = useState([]);
 	const [oneAuthor, setOneAuthor] = useState(false);
 	const [title, setTitle] = useState("");
+
+	useEffect(() => {
+		getQuote()
+	}, [])
 
 	const getQuote = async (aut) => {
 		try {
